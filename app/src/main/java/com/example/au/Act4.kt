@@ -6,8 +6,10 @@ import java.lang.reflect.Modifier
 
 @composable
 fun FormDataDiri(modifier: Modifier){
-    var textNama by remember { mutableStateSetOf(value ="") }
+    var textNama by remember { mutableStateSetOf(value ="")}
     var textAlamat by remember { mutableStateSetOf(value ="")}
     var textJK by remember { mutableStateSetOf(value ="")}
     val gender:List<String> = listof("Laki-laki", "Perempuan")
+
+    var Nama by remember { mutableStateSetOf(value ="")}
 }
