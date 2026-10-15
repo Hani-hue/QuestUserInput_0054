@@ -96,20 +96,23 @@ fun FormDataDiri(modifier: Modifier){
         )
         Button(
             modifier = Modifier.fillMaxWidth(fraction = 1f),
-            // the button is enabled when the user makes a selection
+            //the button is enabled when the user makes a selection
             enabled = textAlamat.isNotEmpty(),
             onClick = {
-                nama = textNama
-                jenis = textJK
-                alamat = textAlamat
+                nama=textNama
+                jenis=textJK
+                alamat=textAlamat
             }
         ) {
-            Text(stringResource(id = R.string.submit))
+            Text(stringResource(id= R.string.submit))
         }
         HorizontalDivider(
             modifier = Modifier.padding(
-                bottom = dimensionResource(id = R.dimen.padding_medium),
-                top = dimensionResource(id = R.dimen.padding_medium)
+                bottom =
+                    dimensionResource(id = R.dimen.padding_medium),
+                top = dimensionResource(
+                    id = R.dimen.padding_medium
+                )
             ),
             thickness = dimensionResource(id = R.dimen.divider_tipis),
             color = Color.DarkGray
@@ -120,15 +123,11 @@ fun FormDataDiri(modifier: Modifier){
             modifier = Modifier
                 .height(100.dp)
                 .width(300.dp)
-        ) {
-            Column(
-                modifier = Modifier.padding(horizontal = 5.dp, vertical = 15.dp)
-            ) {
-                Text(text = "Nama: $nama", color = Color.White)
-                Text(text = "Gender: $jenis", color = Color.White)
-                Text(text = "Alamat: $alamat", color = Color.White)
-            }
-        }
+        ){
+            Column(modifier = Modifier.padding(horizontal = 5.dp, vertical = 15.dp),){
+                Text(text = "Nama :"+nama, color = Color.White)
+                Text(text = "Gender :"+jenis, color = Color.White)
+                Text(text = "Alamat :"+alamat, color = Color.White)
 
             }
         }
