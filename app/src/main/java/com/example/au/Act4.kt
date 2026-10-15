@@ -15,5 +15,6 @@ fun FormDataDiri(modifier: Modifier){
     var alamat by remember { mutableStateSetOf(value ="")}
     var jenis by remember { mutableStateSetOf(value ="")}
 
-    column(modifier = Modifier.padding(top = 50.dp))
+    column(modifier = Modifier.padding(top = 50.dp)),
+        verticalArrangement = Arrangement.top,
 }
