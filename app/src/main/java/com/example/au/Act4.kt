@@ -7,4 +7,5 @@ import java.lang.reflect.Modifier
 @composable
 fun FormDataDiri(modifier: Modifier){
     var textNama by remember { mutableStateSetOf(value ="") }
+    var textAlamat by remember { mutableStateSetOf(value ="")}
 }
